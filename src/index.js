@@ -9,4 +9,4 @@ app.get("/", (req, res) => {
 });
 
 // Export the app for Vercel's serverless functions
-module.exports = app;
+module.exports = (req, res) => app(req, res);
